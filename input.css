@@ -1,0 +1,147 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.body{
+    height: 12000px;
+}
+
+.box-1{
+    position: relative;
+    height: 28rem;
+}
+
+.box-1 img{
+    position: absolute;
+    top: -5rem;
+}
+
+.box-4{
+    position: relative;
+    height: 22rem;
+    margin-top: 18rem;
+
+}
+
+.box-4 img{
+    position: absolute;
+    top: -10rem;
+    left : 15%
+}
+
+.box-5{
+    position: relative;
+    height: 16rem;
+    width: 100%;
+    margin-bottom: 12rem;
+}
+
+.box-5 img{
+    position: absolute;
+    bottom: -4rem;
+
+}
+
+.agree_checkbox + label{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.agree_checkbox + label:before{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffff;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.agree_checkbox:checked + label:before{
+    background-color: #fe7865;
+}
+
+.slider_dots{
+    margin-right: 144px;
+    right: -6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider_dots button , .slider2-dots button{
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    outline: none;
+}
+
+.slider_dots li.slick-active button, .slider2-dots li.slick-active button{
+    background-color: #fe7865;
+    width: 12px;
+    height: 12px;
+}
+
+.slider_dots ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slick-slide.slick-center .inner__box{
+    padding: 0 20px;
+}
+
+.slider2{
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.slick-slide.slick-center .inner__box > div{
+    padding: 50px 0;
+}
+
+.slick-slide:not(.slick-center){
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slick-slider .inner__box .label , .slick-slider .inner__box .number{
+    display: none;
+}
+
+.slick-slide.slick-center .inner__box .label , .slick-slide.slick-center .inner__box .number{
+    display: block;
+}
+
+.slider2-dots{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider2-dots ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.slider2-dots ul li{
+
+    margin-right: 20px;
+
+}
